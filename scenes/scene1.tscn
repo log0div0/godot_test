@@ -1,10 +1,11 @@
-[gd_scene load_steps=13 format=3 uid="uid://bss3m7fwl6ioi"]
+[gd_scene load_steps=14 format=3 uid="uid://bss3m7fwl6ioi"]
 
 [ext_resource type="Texture2D" uid="uid://c8arnlq67qi7" path="res://textures/grids/Dark/texture_05.png" id="1_j54jd"]
 [ext_resource type="Texture2D" uid="uid://b58xv1joypxo5" path="res://textures/grids/Orange/texture_09.png" id="2_rd8sj"]
 [ext_resource type="Texture2D" uid="uid://cm5m7nr7dugjd" path="res://textures/grids/Purple/texture_09.png" id="3_u8p74"]
 [ext_resource type="Texture2D" uid="uid://djg8y25y06h5n" path="res://textures/grids/Green/texture_09.png" id="4_l2544"]
 [ext_resource type="PackedScene" uid="uid://d3fq540o6ku43" path="res://scenes/character.tscn" id="5_3227x"]
+[ext_resource type="PackedScene" uid="uid://cql7ggk60400k" path="res://models/mushroom.blend" id="6_amfv8"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_qku66"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -75,3 +76,6 @@ size = Vector3(3, 3, 3)
 
 [node name="mixamo_base" parent="." instance=ExtResource("5_3227x")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.218146, -4.76837e-07, -0.834102)
+
+[node name="mushroom" parent="." instance=ExtResource("6_amfv8")]
+transform = Transform3D(1.41399, 0, 0, 0, 1.41399, 0, 0, 0, 1.41399, -0.52101, 0.0957377, -7.46939)
